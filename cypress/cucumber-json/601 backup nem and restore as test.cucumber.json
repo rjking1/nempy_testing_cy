@@ -1,0 +1,418 @@
+[
+  {
+    "description": "  the nem py database is now so large (> 15GB as at Dec 2021) that it cannot \n  be nbacked up and restored as a test db in a timely db.\n  So build \"from scratch\" and load daily data as necessary for tests\n\n  BE VERY CAREFUL-- THIS LOGS IN TO THE *** nem *** DATBASE TO START TO GET THE LATEST SCHEMA\n  AND CRITICAL SYSTEM TABLES AND RESTORES INTO THE TEST DATABASE. IF THIS GOES WRONG YOU COULD OVERWRITE THE NEM DB !!",
+    "keyword": "Feature",
+    "name": "Backup nem db on pybase and restore as test",
+    "line": 1,
+    "id": "backup-nem-db-on-pybase-and-restore-as-test",
+    "tags": [],
+    "uri": "601 backup nem and restore as test.feature",
+    "elements": [
+      {
+        "id": "backup-nem-db-on-pybase-and-restore-as-test;check-tabular-data",
+        "keyword": "Scenario",
+        "line": 160,
+        "name": "check tabular data",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 159
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 161,
+            "name": "I login to \"test\" on pybase",
+            "result": {
+              "status": "passed",
+              "duration": 4921000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 162,
+            "name": "go to \". Events\"",
+            "result": {
+              "status": "passed",
+              "duration": 1711000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 163,
+            "name": "I filter on \"Tasmania gas running\"",
+            "result": {
+              "status": "passed",
+              "duration": 846000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 164,
+            "name": "I open the event",
+            "result": {
+              "status": "passed",
+              "duration": 818000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 165,
+            "name": "save table \"#t1\" to file \"tas_prices.csv\"",
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 166,
+            "name": "It should match the expected \"tas_prices\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 176000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 167,
+            "name": "save table \"#t2\" to file \"tas_interconnectors.csv\"",
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 168,
+            "name": "It should match the expected \"tas_interconnectors\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 78000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "backup-nem-db-on-pybase-and-restore-as-test;check-ft-chart-1",
+        "keyword": "Scenario",
+        "line": 171,
+        "name": "check ft chart 1",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 170
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 172,
+            "name": "I login to \"test\" on pybase",
+            "result": {
+              "status": "passed",
+              "duration": 2517000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 173,
+            "name": "go to \". Events\"",
+            "result": {
+              "status": "passed",
+              "duration": 1700000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 174,
+            "name": "I filter on \"Tasmania gas running\"",
+            "result": {
+              "status": "passed",
+              "duration": 975000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 175,
+            "name": "I open the event",
+            "result": {
+              "status": "passed",
+              "duration": 753000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 176,
+            "name": "wait 2000 ms",
+            "result": {
+              "status": "passed",
+              "duration": 2021000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 177,
+            "name": "save chart \"#c1\" to file \"tas_ft_chart\"",
+            "result": {
+              "status": "passed",
+              "duration": 366000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 178,
+            "name": "the saved chart should match the expected \"tas_ft_chart\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 97000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "backup-nem-db-on-pybase-and-restore-as-test;check-ft-chart-2",
+        "keyword": "Scenario",
+        "line": 180,
+        "name": "check ft chart 2",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 179
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 181,
+            "name": "save chart \"#c4\" to file \"tas_ft_diff_chart\"",
+            "result": {
+              "status": "passed",
+              "duration": 253000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 182,
+            "name": "the saved chart should match the expected \"tas_ft_diff_chart\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 70000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "backup-nem-db-on-pybase-and-restore-as-test;save-qld-chart",
+        "keyword": "Scenario",
+        "line": 187,
+        "name": "save qld chart",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 186
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 188,
+            "name": "I login to \"test\" on pybase",
+            "result": {
+              "status": "passed",
+              "duration": 2598000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 189,
+            "name": "go to \". Events\"",
+            "result": {
+              "status": "passed",
+              "duration": 1691000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 190,
+            "name": "I filter on \"Tasmania gas running\"",
+            "result": {
+              "status": "passed",
+              "duration": 1186000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 191,
+            "name": "I open the event",
+            "result": {
+              "status": "passed",
+              "duration": 791000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 192,
+            "name": "go to \"-12 to +12 hours\"",
+            "result": {
+              "status": "passed",
+              "duration": 3892000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 193,
+            "name": "save chart \"#c2-0\" to file \"qld_price_demand_tas\"",
+            "result": {
+              "status": "passed",
+              "duration": 936000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 194,
+            "name": "the saved chart should match the expected \"qld_price_demand_tas\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 140000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "backup-nem-db-on-pybase-and-restore-as-test;save-tas-chart",
+        "keyword": "Scenario",
+        "line": 196,
+        "name": "save tas chart",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 195
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 197,
+            "name": "save chart \"#c2-4\" to file \"tas_price_demand_tas\"",
+            "result": {
+              "status": "passed",
+              "duration": 1199000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 198,
+            "name": "the saved chart should match the expected \"tas_price_demand_tas\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 258000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "backup-nem-db-on-pybase-and-restore-as-test;save-qld-gen",
+        "keyword": "Scenario",
+        "line": 200,
+        "name": "save qld gen",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 199
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 201,
+            "name": "save chart \"#c3-0\" to file \"qld_gen_tas\"",
+            "result": {
+              "status": "passed",
+              "duration": 1403000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 202,
+            "name": "the saved chart should match the expected \"qld_gen_tas\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 257000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "backup-nem-db-on-pybase-and-restore-as-test;save-tas-gen",
+        "keyword": "Scenario",
+        "line": 204,
+        "name": "save tas gen",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 203
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 205,
+            "name": "save chart \"#c3-4\" to file \"tas_gen_tas\"",
+            "result": {
+              "status": "passed",
+              "duration": 1275000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 206,
+            "name": "the saved chart should match the expected \"tas_gen_tas\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 266000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
