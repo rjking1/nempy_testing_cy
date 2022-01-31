@@ -152,6 +152,8 @@ Scenario: compare latest core data to AEMO latest if poss
     Given I login to "test" on pybase
     And   go to "Database"
     And   Load historical data for "2021 09 22 01 00 23 02 00 load pybaseco_test"
+    And wait 10000 ms
+    # added wait above as maybe Loaded is not really loaded when we have a whole day to load ???    
     # create event -- then won't need to load events above
 
 @focus
