@@ -1,0 +1,143 @@
+[
+  {
+    "description": "  the nem py database is now so large (> 15GB as at Dec 2021) that it cannot \n  be backed up and restored as a test db in a timely db.\n  So build \"from scratch\" and load daily data as necessary for tests\n\n  BE VERY CAREFUL-- THIS LOGS IN TO THE *** nem *** DATBASE TO START TO GET THE LATEST SCHEMA\n  AND CRITICAL SYSTEM TABLES AND RESTORES INTO THE TEST DATABASE. IF THIS GOES WRONG YOU COULD OVERWRITE THE NEM DB !!",
+    "keyword": "Feature",
+    "name": "Backup nem db on pybase and restore as test",
+    "line": 1,
+    "id": "backup-nem-db-on-pybase-and-restore-as-test",
+    "tags": [],
+    "uri": "101 backup nem and restore as test.feature",
+    "elements": [
+      {
+        "id": "backup-nem-db-on-pybase-and-restore-as-test;build-test-db-from-current-prod-db",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Build test db from current prod db",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I login to \"nem\" on pybase",
+            "result": {
+              "status": "passed",
+              "duration": 3442000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "go to \"Database\"",
+            "result": {
+              "status": "passed",
+              "duration": 1681000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Backup the \"nem\" db schema copy",
+            "result": {
+              "status": "passed",
+              "duration": 2402000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Backup the \"nem\" db schema",
+            "result": {
+              "status": "passed",
+              "duration": 2221000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Restore to the test db",
+            "result": {
+              "status": "passed",
+              "duration": 1799000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Backup the \"nem\" db tables \"py_named_values py_roles py_users py_views py_actions STATIONS MARKET events\"",
+            "result": {
+              "status": "passed",
+              "duration": 2547000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Restore to the test db",
+            "result": {
+              "status": "passed",
+              "duration": 1037000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I logout",
+            "result": {
+              "status": "passed",
+              "duration": 460000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "backup-nem-db-on-pybase-and-restore-as-test;perform-a-basic-check-we-have-restored-system-data",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Perform a basic check we have restored system data",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I login to \"test\" on pybase",
+            "result": {
+              "status": "passed",
+              "duration": 2343000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "go to \"Database\"",
+            "result": {
+              "status": "passed",
+              "duration": 1665000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I logout",
+            "result": {
+              "status": "passed",
+              "duration": 714000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

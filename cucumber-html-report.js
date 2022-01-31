@@ -7,10 +7,13 @@ report.generate({
       name: "chrome",
       version: "??",
     },
-    device: "Local DELL test machine",
+    device: "Local test machine",
     platform: {
       name: "Windows",
       version: "10",
     },
   },
+  openReportInBrowser: true,
+  displayDuration: true,
+  durationInMS: false,
 });
