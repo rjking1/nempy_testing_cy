@@ -11,6 +11,7 @@
     "chrome": "cypress run --browser chrome --headed",
     "multi-skip": "npx cypress-tags run -e TAGS=\"not @skip and not @skip_if_x\"",
     "focus": "npx cypress-tags run -e TAGS=\"@focus\"",
+    "report": "node cucumber-html-report.js",
     "eslint": "eslint \"cypress/**/*.js\"",
     "eslint:fix": "eslint --fix \"cypress/**/*.js\"",
     "prettier:check": "prettier --check \"cypress/**/*.{js,css,json,md,less}\"",
