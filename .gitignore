@@ -6,6 +6,7 @@ cypress/screenshots/
 cypress/downloads/
 cypress/reports/
 reports/
+cypress/cucumber-json/
 
 notes-do-not-commit.txt
 cypress.env.json
