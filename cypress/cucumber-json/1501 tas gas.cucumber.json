@@ -1,0 +1,417 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Tasmania gas test",
+    "line": 1,
+    "id": "tasmania-gas-test",
+    "tags": [],
+    "uri": "1501 tas gas.feature",
+    "elements": [
+      {
+        "id": "tasmania-gas-test;check-tabular-data",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "check tabular data",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 14
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I login to \"test\" on pybase",
+            "result": {
+              "status": "passed",
+              "duration": 3563000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "go to \". Events\"",
+            "result": {
+              "status": "passed",
+              "duration": 1700000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I filter on \"Tasmania gas running\"",
+            "result": {
+              "status": "passed",
+              "duration": 923000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I open the event",
+            "result": {
+              "status": "passed",
+              "duration": 665000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "save table \"#t1\" to file \"tas_prices.csv\"",
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "It should match the expected \"tas_prices\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 138000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "save table \"#t2\" to file \"tas_interconnectors.csv\"",
+            "result": {
+              "status": "passed",
+              "duration": 80000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "It should match the expected \"tas_interconnectors\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 140000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tasmania-gas-test;check-ft-chart-1",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "check ft chart 1",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 25
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I login to \"test\" on pybase",
+            "result": {
+              "status": "passed",
+              "duration": 2788000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "go to \". Events\"",
+            "result": {
+              "status": "passed",
+              "duration": 1679000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I filter on \"Tasmania gas running\"",
+            "result": {
+              "status": "passed",
+              "duration": 916000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I open the event",
+            "result": {
+              "status": "passed",
+              "duration": 671000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "wait 2000 ms",
+            "result": {
+              "status": "passed",
+              "duration": 2033000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "save chart \"#c1\" to file \"tas_ft_chart\"",
+            "result": {
+              "status": "passed",
+              "duration": 218000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "the saved chart should match the expected \"tas_ft_chart\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tasmania-gas-test;check-ft-chart-2",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "check ft chart 2",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 34
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "save chart \"#c4\" to file \"tas_ft_diff_chart\"",
+            "result": {
+              "status": "passed",
+              "duration": 228000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "the saved chart should match the expected \"tas_ft_diff_chart\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tasmania-gas-test;save-qld-chart",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "save qld chart",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 41
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "I login to \"test\" on pybase",
+            "result": {
+              "status": "passed",
+              "duration": 3497000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "go to \". Events\"",
+            "result": {
+              "status": "passed",
+              "duration": 1694000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "I filter on \"Tasmania gas running\"",
+            "result": {
+              "status": "passed",
+              "duration": 905000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "I open the event",
+            "result": {
+              "status": "passed",
+              "duration": 677000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "go to \"-12 to +12 hours\"",
+            "result": {
+              "status": "passed",
+              "duration": 2927000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "save chart \"#c2-0\" to file \"qld_price_demand_tas\"",
+            "result": {
+              "status": "passed",
+              "duration": 2848000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "the saved chart should match the expected \"qld_price_demand_tas\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 621000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tasmania-gas-test;save-tas-chart",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "save tas chart",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 50
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "save chart \"#c2-4\" to file \"tas_price_demand_tas\"",
+            "result": {
+              "status": "passed",
+              "duration": 2531000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "the saved chart should match the expected \"tas_price_demand_tas\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 446000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tasmania-gas-test;save-qld-gen",
+        "keyword": "Scenario",
+        "line": 55,
+        "name": "save qld gen",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 54
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "save chart \"#c3-0\" to file \"qld_gen_tas\"",
+            "result": {
+              "status": "passed",
+              "duration": 2606000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "the saved chart should match the expected \"qld_gen_tas\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 492000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tasmania-gas-test;save-tas-gen",
+        "keyword": "Scenario",
+        "line": 59,
+        "name": "save tas gen",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 58
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "save chart \"#c3-4\" to file \"tas_gen_tas\"",
+            "result": {
+              "status": "passed",
+              "duration": 4242000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "the saved chart should match the expected \"tas_gen_tas\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 2909000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

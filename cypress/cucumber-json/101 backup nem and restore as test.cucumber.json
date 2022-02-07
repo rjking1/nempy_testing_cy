@@ -23,7 +23,7 @@
             "name": "I login to \"nem\" on pybase",
             "result": {
               "status": "passed",
-              "duration": 3442000000
+              "duration": 3879000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "go to \"Database\"",
             "result": {
               "status": "passed",
-              "duration": 1681000000
+              "duration": 1675000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Backup the \"nem\" db schema copy",
             "result": {
               "status": "passed",
-              "duration": 2402000000
+              "duration": 2279000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "Backup the \"nem\" db schema",
             "result": {
               "status": "passed",
-              "duration": 2221000000
+              "duration": 2171000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "Restore to the test db",
             "result": {
               "status": "passed",
-              "duration": 1799000000
+              "duration": 1778000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "Backup the \"nem\" db tables \"py_named_values py_roles py_users py_views py_actions STATIONS MARKET events\"",
             "result": {
               "status": "passed",
-              "duration": 2547000000
+              "duration": 2487000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Restore to the test db",
             "result": {
               "status": "passed",
-              "duration": 1037000000
+              "duration": 1063000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I logout",
             "result": {
               "status": "passed",
-              "duration": 460000000
+              "duration": 572000000
             }
           }
         ]
@@ -113,7 +113,7 @@
             "name": "I login to \"test\" on pybase",
             "result": {
               "status": "passed",
-              "duration": 2343000000
+              "duration": 2380000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "go to \"Database\"",
             "result": {
               "status": "passed",
-              "duration": 1665000000
+              "duration": 1655000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "I logout",
             "result": {
               "status": "passed",
-              "duration": 714000000
+              "duration": 221000000
             }
           }
         ]
