@@ -6,8 +6,8 @@ Feature: Tasmania gas test
   Scenario: Tasmania gas running
     Given I login to "test" on pybase
     And   go to "Database"
-    And   Load historical data for "2021 09 22 01 00 23 02 00 load pybaseco_test"
-    And wait 10000 ms
+    And   Load historical data for "2021 09 22 12 00 22 15 00 load pybaseco_test"
+    # And wait 10000 ms
     # added wait above as maybe Loaded is not really loaded when we have a whole day to load ???    
     # create event -- then won't need to load events above
 
