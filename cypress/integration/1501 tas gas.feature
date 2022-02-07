@@ -2,13 +2,15 @@ Feature: Tasmania gas test
 
 # reload a day into test db that was loaded by the importer into prod and check we get same results which have been saved from prod
 # must cover period of 01:45 to 01:40 as nem has all data; test will only have what we load here
+# feb 7h 2022 - changed to only load part of a day. there must bea bug with loading > 24 hours
+
+# also. another idea is to cache the monthly archive files on the server to save hittin aemo each time we run the tas_gen_tas
+# can have a clear cache command if we really need to redownload aemo archive files.
 
   Scenario: Tasmania gas running
     Given I login to "test" on pybase
     And   go to "Database"
     And   Load historical data for "2021 09 22 12 00 22 15 00 load pybaseco_test"
-    # And wait 10000 ms
-    # added wait above as maybe Loaded is not really loaded when we have a whole day to load ???    
     # create event -- then won't need to load events above
 
 @focus
