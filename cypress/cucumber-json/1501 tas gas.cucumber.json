@@ -10,7 +10,7 @@
       {
         "id": "tasmania-gas-test;tasmania-gas-running",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 10,
         "name": "Tasmania gas running",
         "tags": [],
         "type": "scenario",
@@ -18,31 +18,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
+            "line": 11,
             "name": "I login to \"test\" on pybase",
             "result": {
               "status": "passed",
-              "duration": 132623000000
+              "duration": 3223000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
+            "line": 12,
             "name": "go to \"Database\"",
             "result": {
               "status": "passed",
-              "duration": 1714000000
+              "duration": 1622000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
+            "line": 13,
             "name": "Load historical data for \"2021 09 22 12 00 22 15 00 load pybaseco_test\"",
             "result": {
               "status": "passed",
-              "duration": 31465000000
+              "duration": 20612000000
             }
           }
         ]
@@ -50,12 +50,12 @@
       {
         "id": "tasmania-gas-test;check-tabular-data",
         "keyword": "Scenario",
-        "line": 15,
+        "line": 17,
         "name": "check tabular data",
         "tags": [
           {
             "name": "@focus",
-            "line": 14
+            "line": 16
           }
         ],
         "type": "scenario",
@@ -63,81 +63,81 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
+            "line": 18,
             "name": "I login to \"test\" on pybase",
             "result": {
               "status": "passed",
-              "duration": 2991000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "go to \". Events\"",
-            "result": {
-              "status": "passed",
-              "duration": 1677000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "I filter on \"Tasmania gas running\"",
-            "result": {
-              "status": "passed",
-              "duration": 1009000000
+              "duration": 2861000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "I open the event",
+            "name": "go to \". Events\"",
             "result": {
               "status": "passed",
-              "duration": 1030000000
+              "duration": 1660000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 20,
-            "name": "save table \"#t1\" to file \"tas_prices.csv\"",
+            "name": "I filter on \"Tasmania gas running\"",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 1035000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "It should match the expected \"tas_prices\" csv file",
+            "name": "I open the event",
             "result": {
               "status": "passed",
-              "duration": 118000000
+              "duration": 731000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
-            "name": "save table \"#t2\" to file \"tas_interconnectors.csv\"",
+            "name": "save table \"#t1\" to file \"tas_prices.csv\"",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 54000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
+            "name": "It should match the expected \"tas_prices\" csv file",
+            "result": {
+              "status": "passed",
+              "duration": 166000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "save table \"#t2\" to file \"tas_interconnectors.csv\"",
+            "result": {
+              "status": "passed",
+              "duration": 77000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
             "name": "It should match the expected \"tas_interconnectors\" csv file",
             "result": {
               "status": "passed",
-              "duration": 123000000
+              "duration": 111000000
             }
           }
         ]
@@ -145,12 +145,12 @@
       {
         "id": "tasmania-gas-test;check-ft-chart-1",
         "keyword": "Scenario",
-        "line": 26,
+        "line": 28,
         "name": "check ft chart 1",
         "tags": [
           {
             "name": "@focus",
-            "line": 25
+            "line": 27
           }
         ],
         "type": "scenario",
@@ -158,71 +158,71 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 27,
+            "line": 29,
             "name": "I login to \"test\" on pybase",
             "result": {
               "status": "passed",
-              "duration": 2974000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 28,
-            "name": "go to \". Events\"",
-            "result": {
-              "status": "passed",
-              "duration": 1709000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "I filter on \"Tasmania gas running\"",
-            "result": {
-              "status": "passed",
-              "duration": 908000000
+              "duration": 3286000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 30,
-            "name": "I open the event",
+            "name": "go to \". Events\"",
             "result": {
               "status": "passed",
-              "duration": 682000000
+              "duration": 1626000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 31,
-            "name": "wait 2000 ms",
+            "name": "I filter on \"Tasmania gas running\"",
             "result": {
               "status": "passed",
-              "duration": 2034000000
+              "duration": 1239000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 32,
-            "name": "save chart \"#c1\" to file \"tas_ft_chart\"",
+            "name": "I open the event",
             "result": {
               "status": "passed",
-              "duration": 205000000
+              "duration": 739000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 33,
+            "name": "wait 2000 ms",
+            "result": {
+              "status": "passed",
+              "duration": 2012000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "save chart \"#c1\" to file \"tas_ft_chart\"",
+            "result": {
+              "status": "passed",
+              "duration": 200000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
             "name": "the saved chart should match the expected \"tas_ft_chart\" csv file",
             "result": {
               "status": "passed",
-              "duration": 88000000
+              "duration": 49000000
             }
           }
         ]
@@ -230,12 +230,12 @@
       {
         "id": "tasmania-gas-test;check-ft-chart-2",
         "keyword": "Scenario",
-        "line": 35,
+        "line": 37,
         "name": "check ft chart 2",
         "tags": [
           {
             "name": "@focus",
-            "line": 34
+            "line": 36
           }
         ],
         "type": "scenario",
@@ -243,21 +243,21 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 36,
+            "line": 38,
             "name": "save chart \"#c4\" to file \"tas_ft_diff_chart\"",
             "result": {
               "status": "passed",
-              "duration": 215000000
+              "duration": 185000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 37,
+            "line": 39,
             "name": "the saved chart should match the expected \"tas_ft_diff_chart\" csv file",
             "result": {
               "status": "passed",
-              "duration": 44000000
+              "duration": 50000000
             }
           }
         ]
@@ -265,12 +265,12 @@
       {
         "id": "tasmania-gas-test;save-qld-chart",
         "keyword": "Scenario",
-        "line": 42,
+        "line": 44,
         "name": "save qld chart",
         "tags": [
           {
             "name": "@focus",
-            "line": 41
+            "line": 43
           }
         ],
         "type": "scenario",
@@ -278,71 +278,71 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 43,
+            "line": 45,
             "name": "I login to \"test\" on pybase",
             "result": {
               "status": "passed",
-              "duration": 2472000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 44,
-            "name": "go to \". Events\"",
-            "result": {
-              "status": "passed",
-              "duration": 1680000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "I filter on \"Tasmania gas running\"",
-            "result": {
-              "status": "passed",
-              "duration": 943000000
+              "duration": 2474000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 46,
-            "name": "I open the event",
+            "name": "go to \". Events\"",
             "result": {
               "status": "passed",
-              "duration": 660000000
+              "duration": 1641000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 47,
-            "name": "go to \"-12 to +12 hours\"",
+            "name": "I filter on \"Tasmania gas running\"",
             "result": {
               "status": "passed",
-              "duration": 1897000000
+              "duration": 1131000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 48,
-            "name": "save chart \"#c2-0\" to file \"qld_price_demand_tas\"",
+            "name": "I open the event",
             "result": {
               "status": "passed",
-              "duration": 651000000
+              "duration": 662000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 49,
+            "name": "go to \"-12 to +12 hours\"",
+            "result": {
+              "status": "passed",
+              "duration": 1978000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "save chart \"#c2-0\" to file \"qld_price_demand_tas\"",
+            "result": {
+              "status": "passed",
+              "duration": 392000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
             "name": "the saved chart should match the expected \"qld_price_demand_tas\" csv file",
             "result": {
               "status": "passed",
-              "duration": 151000000
+              "duration": 108000000
             }
           }
         ]
@@ -350,12 +350,12 @@
       {
         "id": "tasmania-gas-test;save-tas-chart",
         "keyword": "Scenario",
-        "line": 51,
+        "line": 53,
         "name": "save tas chart",
         "tags": [
           {
             "name": "@focus",
-            "line": 50
+            "line": 52
           }
         ],
         "type": "scenario",
@@ -363,21 +363,21 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 52,
+            "line": 54,
             "name": "save chart \"#c2-4\" to file \"tas_price_demand_tas\"",
             "result": {
               "status": "passed",
-              "duration": 659000000
+              "duration": 507000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 53,
+            "line": 55,
             "name": "the saved chart should match the expected \"tas_price_demand_tas\" csv file",
             "result": {
               "status": "passed",
-              "duration": 182000000
+              "duration": 73000000
             }
           }
         ]
@@ -385,12 +385,12 @@
       {
         "id": "tasmania-gas-test;save-qld-gen",
         "keyword": "Scenario",
-        "line": 55,
+        "line": 57,
         "name": "save qld gen",
         "tags": [
           {
             "name": "@focus",
-            "line": 54
+            "line": 56
           }
         ],
         "type": "scenario",
@@ -398,21 +398,21 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 56,
+            "line": 58,
             "name": "save chart \"#c3-0\" to file \"qld_gen_tas\"",
             "result": {
               "status": "passed",
-              "duration": 640000000
+              "duration": 491000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 57,
+            "line": 59,
             "name": "the saved chart should match the expected \"qld_gen_tas\" csv file",
             "result": {
               "status": "passed",
-              "duration": 180000000
+              "duration": 30000000
             }
           }
         ]
@@ -420,12 +420,12 @@
       {
         "id": "tasmania-gas-test;save-tas-gen",
         "keyword": "Scenario",
-        "line": 59,
+        "line": 61,
         "name": "save tas gen",
         "tags": [
           {
             "name": "@focus",
-            "line": 58
+            "line": 60
           }
         ],
         "type": "scenario",
@@ -433,21 +433,21 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 60,
+            "line": 62,
             "name": "save chart \"#c3-4\" to file \"tas_gen_tas\"",
             "result": {
               "status": "passed",
-              "duration": 640000000
+              "duration": 373000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 61,
+            "line": 63,
             "name": "the saved chart should match the expected \"tas_gen_tas\" csv file",
             "result": {
               "status": "passed",
-              "duration": 322000000
+              "duration": 63000000
             }
           }
         ]
