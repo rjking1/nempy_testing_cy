@@ -51,6 +51,8 @@ And("Load historical data for {string}", (dateRange) => {
   cy.get("#py_params").focus().clear().type(dateRange);
   cy.get("#run_py").click();
   cy.contains("Loaded", { timeout: 150000 });
+  // eslint-disable-next-line cypress/no-unnecessary-waiting
+  cy.wait(5000);
 });
 
 // not used now
