@@ -4,9 +4,8 @@ node_modules/
 cypress/videos/
 cypress/screenshots/
 cypress/downloads/
-cypress/reports/
+cypress/cucumber-json/*
 reports/
-cypress/cucumber-json/
 
 notes-do-not-commit.txt
 cypress.env.json
